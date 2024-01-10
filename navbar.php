@@ -3,16 +3,19 @@
 	
 </style>
 
-<nav id="sidebar" class='mx-lt-5 bg-dark' >
+<nav id="sidebar" class='mx-lt-5 bg-secondary' >
 		
 		<div class="sidebar-list">
 
 				<a href="index.php?page=home" class="nav-item nav-home"><span class='icon-field'><i class="fa fa-home"></i></span> Home</a>
-				<a href="index.php?page=categories" class="nav-item nav-categories"><span class='icon-field'><i class="fa fa-list"></i></span> Portfolio List</a>
-				<a href="index.php?page=voting_list" class="nav-item nav-voting_list nav-manage_voting"><span class='icon-field'><i class="fa fa-poll-h"></i></span> Voting List</a>
+				<a href="index.php?page=categories" class="nav-item nav-categories"><span class='icon-field'><i class="fa fa-list"></i></span> Ballot Paper</a>
+				<a href="index.php?page=voting_list" class="nav-item nav-voting_list nav-manage_voting"><span class='icon-field'><i class="fa fa-poll-h"></i></span>Institution</a>
 				<?php if($_SESSION['login_type'] == 1): ?>
 				<a href="index.php?page=users" class="nav-item nav-users"><span class='icon-field'><i class="fa fa-users"></i></span> Users</a>
-			<?php endif; ?>
+				<a href="index.php?page=results" class="nav-item nav-results"><span class='icon-field'><i class="fa fa-poll-h"></i></span> Results</a>
+				<a href="index.php?page=sendsmses" class="nav-item nav-sendsmses"><span class='icon-field'><i class="fa fa-sendsmses"></i></span> Send OTP's</a>
+			
+				<?php endif; ?>
 		</div>
 
 </nav>
